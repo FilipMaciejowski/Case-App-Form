@@ -1,0 +1,157 @@
+.Form__main {
+    background-color: rgb(195, 227, 240);
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.Form__name {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    color: rgb(90, 105, 192);
+    display: block;
+    width: 75%;
+}
+
+form {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: .35rem 0;
+    font-size: .9rem;
+}
+
+input {
+    height: 1.5rem;
+    border-radius: 2px;
+    border: 2px solid white;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(112, 130, 235);
+}
+
+input:placeholder {
+    font-size: .75rem;
+    width: auto;
+}
+
+input:-webkit-autofill {
+    background-color: rgb(195, 227, 240) !important;
+}
+
+textarea {
+    height: 4rem;
+    border-radius: 2px;
+    outline: none;
+    border: 2px solid white;
+}
+
+textarea:focus {
+    border: 2px solid rgb(112, 130, 235);
+}
+
+textarea::placeholder {
+    font-size: 0.75rem;
+}
+
+.Btn {
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    border: 2px solid rgb(112, 130, 235);
+    font-size: .75rem;
+    background-color: rgb(112, 130, 235);
+    color: white;
+    margin: 1rem auto 0 auto;
+    outline: none;
+}
+
+.Btn:hover {
+    background-color: rgb(66, 84, 184);
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgb(66, 84, 184);
+}
+
+Btn:active {
+    outline: none;
+}
+
+.Error__box {
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.Error__box li {
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.Error__box li:before {
+    content: "\26A0 ";
+    position: relative;
+    left: -2px;
+    top: -3px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: red;
+    transition: all 1s linear;
+}
+
+span.Error {
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.5rem auto;
+    z-index: 2;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 1s linear;
+}
+
+.Success__box {
+    width: 20rem;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.Sucess__icon:before {
+    content: "\2714 ";
+    position: relative;
+    left: -2px;
+    top: -3px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: green;
+    transition: all 1s linear;
+}
